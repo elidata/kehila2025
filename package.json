@@ -1,9 +1,10 @@
 {
-  "name": "newapp",
+  "name": "kehila2025",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://eli-data.github.io/kehila",
   "dependencies": {
+    "firebase": "^11.9.1",
     "gh-pages": "^6.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -28,5 +29,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "ajv": "8.12"
   }
 }

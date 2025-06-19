@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import app from './firebase'; // Assuming firebase.js is in the same directory
 
 const projects = [
   { id: 1, name: 'project1', students: ['student1', 'student2', 'student3', 'student4', 'student5'] },
@@ -39,6 +40,7 @@ const Card = ({ project }) => {
   const borderColors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink', 'brown', 'cyan', 'magenta', 'lime', 'teal', 'indigo', 'violet', 'gold'];
   const randomColor = borderColors[Math.floor(Math.random() * borderColors.length)];
 
+  console.log("appname is", app.name);
   return (
     <div className="card" style={{ border: `2px solid ${randomColor}`, position: 'relative' }}>
       <h2>{project.name}</h2>
